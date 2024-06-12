@@ -1,0 +1,13 @@
+#include "{{ WindowClassName.lower() }}.h"
+
+{{ WindowClassName }}::{{ WindowClassName }}(QWidget *parent)
+    : QMainWindow(parent)
+    , ui(new Ui::{{ WindowClassName }}())
+{
+    ui->setupUi(this);
+}
+
+{{ WindowClassName }}::~{{ WindowClassName }}()
+{
+    delete ui;
+}

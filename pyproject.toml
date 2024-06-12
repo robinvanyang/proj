@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ptpl"
+version = "0.1.0"
+description = ""
+authors = ["RobinVanYang <thehappyone@163.com>"]
+readme = "README.md"
+packages = [{ include = "ptpl", from = "src" }, { include = "rvy", from = "src" }]
+include = [
+    { path = "src/ptpl/tpl/*", format = ["sdist", "wheel"] }
+]
+
+[tool.poetry.scripts]
+ptpl = "ptpl.core:main"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+jinja2 = "^3.1.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

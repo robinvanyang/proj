@@ -1,0 +1,20 @@
+#pragma once
+
+#include <QtWidgets/QMainWindow>
+#include "ui_{{ WindowClassName.lower() }}.h"
+
+QT_BEGIN_NAMESPACE
+namespace Ui { class {{ WindowClassName }}; };
+QT_END_NAMESPACE
+
+class {{ WindowClassName }} : public QMainWindow
+{
+    Q_OBJECT
+
+public:
+    {{ WindowClassName }}(QWidget *parent = nullptr);
+    ~{{ WindowClassName }}();
+
+private:
+    Ui::{{ WindowClassName }} *ui;
+};
