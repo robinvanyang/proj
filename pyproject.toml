@@ -9,12 +9,13 @@ include = [
     { path = "src/ptpl/tpl/*", format = ["sdist", "wheel"] }
 ]
 
-[tool.poetry.scripts]
-ptpl = "ptpl.core:main"
-
 [tool.poetry.dependencies]
 python = "^3.11"
 jinja2 = "^3.1.4"
+cleo = "^2.1.0"
+
+[tool.poetry.scripts]
+ptpl = "ptpl.cli:main"
 
 [build-system]
 requires = ["poetry-core"]
