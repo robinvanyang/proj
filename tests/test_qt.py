@@ -1,5 +1,5 @@
 import unittest
-from ptpl.qt.qt_command import QtCommand
+from proj.qt.qt_command import QtCommand
 from cleo.application import Application
 from cleo.testers.command_tester import CommandTester
 

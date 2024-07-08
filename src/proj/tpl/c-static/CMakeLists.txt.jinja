@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.10)
+project({{ ProjectName }} LANGUAGES C)
+
+add_library(${PROJECT_NAME} {{ ProjectName.lower() }}.c)
+target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
