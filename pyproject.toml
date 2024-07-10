@@ -17,8 +17,6 @@ typer = "^0.12.3"
 
 [tool.poetry.scripts]
 proj = "proj.console.application:main"
-reigns = "proj.console.reigns:app"
-towns = "proj.console.towns:app"
 
 [build-system]
 requires = ["poetry-core"]
