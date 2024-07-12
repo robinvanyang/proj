@@ -3,5 +3,5 @@ project({{ ProjectName }} LANGUAGES C)
 
 add_library({{ ProjectName.lower() }} SHARED {{ ProjectName.lower() }}.c)
 
-target_compile_definitions({{ ProjectName.lower() }} PRIVATE -DIM_SHARED_LIB_EXPORTS)
+target_compile_definitions({{ ProjectName.lower() }} PRIVATE -D{{ ProjectUpperSymbol }}_EXPORTS)
 target_include_directories({{ ProjectName.lower() }} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

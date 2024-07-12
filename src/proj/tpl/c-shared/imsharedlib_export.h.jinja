@@ -1,11 +1,11 @@
 #pragma once
 
 #if _WIN32
-#ifdef IM_SHARED_LIB_EXPORTS
-#define IM_SHARED_LIB_API __declspec(dllexport)
+#ifdef {{ ProjectUpperSymbol }}_EXPORTS
+#define {{ ProjectUpperSymbol }}_API __declspec(dllexport)
 #else
-#define IM_SHARED_LIB_API __declspec(dllimport)
+#define {{ ProjectUpperSymbol }}_API __declspec(dllimport)
 #endif
 #else
-#define IM_SHARED_LIB_API
+#define {{ ProjectUpperSymbol }}_API
 #endif // _WIN32
